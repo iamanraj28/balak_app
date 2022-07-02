@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "804005269664",
+    "project_id": "balak-69",
+    "storage_bucket": "balak-69.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804005269664:android:4e4513f8c4eb577157b9c5",
+        "android_client_info": {
+          "package_name": "chillipotato.balak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804005269664-s2iaras5voehfqs1j7v0chll7u93pib4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "chillipotato.balak",
+            "certificate_hash": "17e4396296db67f32842fe26fee32a7e16cfd982"
+          }
+        },
+        {
+          "client_id": "804005269664-0t6e36dj64dhg50b888gf7a5a1tu8h6r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNFm2TfhFpMVYGIfJ3WdXH6GRyubOuzuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "804005269664-0t6e36dj64dhg50b888gf7a5a1tu8h6r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

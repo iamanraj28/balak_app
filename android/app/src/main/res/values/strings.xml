@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+   <string name="app_name">Balak</string>  <!--fb app name-->
+   <string name="facebook_app_id">978499556137770</string>  <!--fb app id-->
+   <string name="fb_login_protocol_scheme">fb978499556137770</string>  <!--fb+app_id-->
+</resources>
