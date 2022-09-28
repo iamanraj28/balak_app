@@ -14,7 +14,7 @@ class PopularBloc extends ChangeNotifier {
     rawData = await firestore
         .collection('contents')
         .orderBy('loves', descending: true)
-        .limit(5)
+        .limit(3)
         .get();
 
     List<DocumentSnapshot> _snap = [];

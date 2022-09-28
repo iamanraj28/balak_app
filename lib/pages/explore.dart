@@ -1,6 +1,9 @@
+// ignore_for_file: unused_label, unnecessary_statements
+
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
+import 'package:kommunicate_flutter/kommunicate_flutter.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:md2_tab_indicator/md2_tab_indicator.dart';
 import 'package:stud_app/blocs/featured_bloc.dart';
@@ -158,6 +161,26 @@ class _ExploreState extends State<Explore>
           );
         },
       )),
+      floatingActionButton: FloatingActionButton.extended(
+          label:
+              Row(children: [Icon(Icons.face), Text(' Greetings, Wanderer')]),
+          backgroundColor: Colors.deepPurple,
+          onPressed: () async {
+            {
+              dynamic conversationObject = {
+                'appId':
+                    '13df5b0cdd20d41fc772ca348725dcb59', // The [APP_ID](https://dashboard.kommunicate.io/settings/install) obtained from kommunicate dashboard.
+              };
+
+              KommunicateFlutterPlugin.buildConversation(conversationObject)
+                  .then((clientConversationId) {
+                print("Conversation builder success : " +
+                    clientConversationId.toString());
+              }).catchError((error) {
+                print("Conversation builder error : " + error.toString());
+              });
+            }
+          }),
     );
   }
 

@@ -29,7 +29,8 @@ class AppService {
 
   Future openLink(context, String url) async {
     if (await urlLauncher.canLaunch(url)) {
-      urlLauncher.launch(url);
+      urlLauncher.launch(url,
+          forceSafariVC: true, forceWebView: true, enableJavaScript: true);
     } else {
       openToast1(context, "Can't launch the url");
     }

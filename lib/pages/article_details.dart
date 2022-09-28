@@ -235,7 +235,7 @@ class _ArticleDetailsState extends State<ArticleDetails> {
                                                       fontSize: 15))
                                               .tr(),
                                           onPressed: () => AppService()
-                                              .openLinkWithCustomTab(
+                                              .openLink(
                                                   context, article.sourceUrl!),
                                         ),
                                         TextButton.icon(
